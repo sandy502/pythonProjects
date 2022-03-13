@@ -1,13 +1,5 @@
-#how to take input from users
-#a = int(input("Enter a number: "))
-#print(a)
-
-#2 inputs at a time
-#x, y = [int(x) for x in input("Enter two values: ").split(",")]
-#print("First number is {} and second number is {}".format(x, y))
-#print()
-
-#raw_input
+#Mad Libs is a phrasal template word game created by Leonard Stern and Roger Price.
+#It consists of one player prompting others for a list of words to substitute for blanks in a story before reading aloud.
 
 print(": p MAD LIBS ( :")
 
