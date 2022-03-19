@@ -13,34 +13,17 @@
 # print(evendigits)
 
 
-#Question 2
-# accounts = [[2,8,7],[7,1,3],[1,9,5]]
-# max = 0
+Question 2
+accounts = [[2,8,7],[7,1,3],[1,9,5]]
+max = 0
 
-# for i in range(len(accounts)):
-#     sum = 0
-#     for j in range(len(accounts[i])):
-#         sum = sum + accounts[i][j]
+for i in range(len(accounts)):
+    sum = 0
+    for j in range(len(accounts[i])):
+        sum = sum + accounts[i][j]
 
-#     if max < sum:
-#         max = sum
+    if max < sum:
+        max = sum
                 
-# print(max)
-
-#Question 3
-nums = [3,2,4] 
-target = 6
-lists = []
-numb = 0
-for i in range(len(nums)):
-    if nums[i] == target :
-        numb = nums[i]
-        print(i)
-    elif nums[i] < target :
-        numb = numb + nums[i]
-        lists.append(i)
-    else:
-        continue
-        #print(-1)  
-
-print(lists)        
+print(max)
+      
