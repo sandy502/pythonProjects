@@ -5,11 +5,11 @@ def guess(x):
     number = random.randint(1, x)
     guess = 0
     while guess != number:
-        guess = int(input(f'guess a number between 1 to {x}: '))
+        guess = int(input(f'\nguess a number between 1 to {x}: '))
         if guess < number:
-            print("\n\nSorry, It was low. Looks like you have too low standards !!!\n\n")
+            print("\nSorry, It was low. Looks like you have too low standards !!!\n")
         elif guess > number:
-            print("\n\nSorry, guess again. Your high standards doesn't match ours!!!\n\n")
+            print("\nSorry, guess again. Your high standards doesn't match ours!!!\n")
 
     print("\nSurprise! Surprise!! mf!!! You just hit the jackpot!!!\n")
     print(f'\ncongrats!!! you are  idiot number {number} in our list.')        
