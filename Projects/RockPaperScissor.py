@@ -6,6 +6,7 @@
 import random
 
 def play():
+    print("\n** WELCOME!!! **\n _____Let\'s Play_____\n <<<<<<< ROCK PAPER SCISSORS >>>>>>>\n # The game of choices.\n")
     user = input("*** (WARNING) Choose wisely or else you lose everything you have  ***\n\n . . . 'r' for ROCK, 'p' for PAPER and 's' for SCISSORS . . .\n")
     computer = random.choice(['r' , 'p' , 's'])
 
@@ -13,12 +14,12 @@ def play():
         return 'It\'s a TIE. But you lost because you did not win. . .\n'
 
     if is_win(user, computer):
-        return '\n You WON!!! we hope it happens again with you . . . :)'   
+        return '\n You WON!!! we hope it happens again with you .  :)'   
 
-    return 'You LOST! Just because you take bad decisions not bad choices. . . :| \n'     
+    return 'You LOST! Because that\'s your forever destiny .   :| \n'     
 
 def is_win(player, opponent):
     if (player == 'r' and opponent == 's') or (player == 's' and opponent == 'p') or (player == 'p' and opponent == 'r'):
         return True       
 
-print(play())         
+print(play())      
