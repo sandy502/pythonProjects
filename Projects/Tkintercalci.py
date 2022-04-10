@@ -45,7 +45,22 @@ if __name__ == "__main__":
     expression_field = Entry(gui, textvariable=equation)
     expression_field.grid(columnspan=4, ipadx=80)
 
+    #w = Button ( master, option=value, ... )
+    #master − This represents the parent window.
+    #options − This is used to add widgets to the windows.there are many options that can be used as key-value pairs separated by commas.
+    # bd - Border width in pixels. Default is 2.
+    # bg - Normal background color.
+    # fg - Normal foreground (text) color.
+    # height - Height of the button in text lines (for textual buttons) or pixels (for images).
+    # width - Width of the button in letters (if displaying text) or pixels (if displaying an image).
+    # command - Function or method to be called when the button is clicked.
     btn1 = Button(gui,text = '1', fg='black', bg='white', command=lambda: press(1), height=2, width=8)
+    # widget.grid( grid_options )
+    # column − The column to put widget in; default 0 (leftmost column).
+    # row − The row to put widget in; default the first row that is still empty.
+    # rowspan − How many rowswidget occupies; default 1.
+    # columnspan − How many columns widgetoccupies; default 1
+    # lambda arguments : expression
     btn1.grid(row=2, column=0)
 
     btn2 = Button(gui,text = '2', fg='black', bg='white', command=lambda: press(2), height=2, width=8)
@@ -95,5 +110,5 @@ if __name__ == "__main__":
  
     equal= Button(gui, text=' = ', fg='black', bg='white', command=equalpress, height=2, width=8)
     equal.grid(row=6, column=0)
-
+    # it is used to create gui window
     gui.mainloop()
