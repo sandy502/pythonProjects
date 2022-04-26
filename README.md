@@ -15,3 +15,4 @@
 - There are currently 15 types of widgets in Tkinter.
 - Tkinter widgets have access to specific geometry management methods, which have the purpose of organizing widgets throughout the parent widget area. 
 - Tkinter exposes the following geometry manager classes: **pack, grid, and place**.
+- Basic mini projects like calendar, calculator etc. Are displayed here. 
