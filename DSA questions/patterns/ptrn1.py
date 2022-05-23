@@ -347,27 +347,112 @@ def main():
 
         # 1 2 3 4 5 4 3 2 1
 
+    # i = 1
+    # while i <= n:
+    #     # print space
+    #     space =  n - i
+    #     while space:
+    #         print(' ', end = ' ')
+    #         space = space - 1
+
+    #     # print first triange
+    #     j = 1
+    #     while j <= i:
+    #         print(j, end = ' ') 
+    #         j = j + 1
+
+    #     # print second triange
+    #     start = i - 1
+    #     while start:
+    #         print(start, end = ' ')
+    #         start = start - 1  
+    #     print('\n')
+    #     i = i + 1  
+
+
+        # number: 4
+        # X X X X
+
+        # X X X
+
+        # X X
+
+        # X
+
+    # i = 1
+    # while i <= n:
+    #     j = 1
+    #     while j <= n - i + 1:
+    #         print('X', end = ' ')
+    #         j = j + 1
+    #     print('\n')
+    #     i = i + 1    
+
+
+        # number: 3
+        # X X X
+
+        #   X X
+
+        #     X    
+
+    # i = 1
+    # while i <= n:
+    #     # print space
+    #     space = 0
+    #     while space < i - 1:
+    #         print(' ', end = ' ')
+    #         space = space + 1
+
+    #     # print X
+    #     j = 1
+    #     while j <= n - i + 1:
+    #         print('X', end = ' ')
+    #         j = j + 1
+    #     print('\n')
+    #     i = i + 1 
+
+
+        # number: 4
+        # 1 2 3 4 4 3 2 1
+
+        # 1 2 3 * * 3 2 1
+
+        # 1 2 * * * * 2 1
+
+        # 1 * * * * * * 1
+
     i = 1
     while i <= n:
-        # print space
-        space =  n - i
-        while space:
-            print(' ', end = ' ')
-            space = space - 1
 
-        # print first triange
+        # print triangle number1
         j = 1
-        while j <= i:
-            print(j, end = ' ') 
+        while j <= n - i + 1:
+            print(j, end = ' ')
             j = j + 1
 
-        # print second triange
-        start = i - 1
-        while start:
-            print(start, end = ' ')
-            start = start - 1  
+
+        # print triangle star1
+        star1 = 0
+        while star1 < i - 1:
+            print('*', end = ' ')
+            star1 = star1 + 1
+
+        
+        # print triangle star2
+        star2 = 0
+        while star2 < i - 1:
+            print('*', end = ' ')
+            star2 = star2 + 1
+
+        # print triangle number2      
+        j = j - 1
+        while j > 0:
+            print(j, end = ' ')
+            j = j - 1
         print('\n')
-        i = i + 1  
+        i = i + 1 
+        
 
 if __name__ == "__main__":  # main function
     main()   
